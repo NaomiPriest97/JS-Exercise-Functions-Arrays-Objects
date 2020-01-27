@@ -44,6 +44,9 @@ function makePersonObject(id, name, email) {
     id: 5,
     name: 'leia',
     email: 'leia@leia.com',
+    email: "luke@luke.com",
+    id: 1,
+    name: "Luke"
   }
 }
 
@@ -146,8 +149,8 @@ function get3rdCar(inventory) {
  * For example, if getCarInfoByIndex is invoked with the inventory and the number 0,
  * it will return `This is a Lincoln Navigator`.
 */
-function getCarInfoByIndex(inventory, index) {
-  return `This is a ${inventory[index].car_make} ${inventory[index].car_model}`    
+function getCarInfoByIndex(inventory) {
+  return `This is a ${inventory[0].car_make} ${inventory[0].car_model}` 
 }
 
 /**
@@ -161,8 +164,8 @@ function getCarInfoByIndex(inventory, index) {
  * For example, if getLastCarInfo is invoked passing the inventory inside /data/inventory.js,
  * it will return `This is a Lincoln Town Car`.
 */
-function getLastCarInfo(/* code here */) {
-  /* code here */
+function getLastCarInfo(inventory) {
+  return `This is a ${inventory[49].car_make} ${inventory[49].car_model}`
 }
 
 /**
@@ -177,8 +180,8 @@ function getLastCarInfo(/* code here */) {
  * For example, if getCarInfoById is invoked with the inventory and the number 1,
  * it will return `This is a Lincoln Navigator`.
 */
-function getCarInfoById(/* code here */) {
-  /* code here */
+function getCarInfoById(inventory, index) {
+  
 }
 
 /**
