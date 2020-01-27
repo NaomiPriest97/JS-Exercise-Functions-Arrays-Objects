@@ -39,8 +39,8 @@ function addNumbers(num1, num2) {
  *   email: "leia@leia.com",
  * }
 */
-function makePersonObject(/* code here */) {
-  /* code here */
+function makePersonObject() {
+  
 }
 
 /**
@@ -57,7 +57,7 @@ function makePersonObject(/* code here */) {
  * the returned value should look like `Hello, my name is Leia`.
 */
 function getName(/* code here */) {
-  /* code here */
+  
 }
 
 /**
@@ -244,9 +244,15 @@ function getGermanCars(/* code here */) {
  *   return num * 2
  * }
 */
-const sum = null; // code here!
-const addFive = null; // code here!
-const argTimesTwo = null; // code here!
+const sum = (a, b)=>{
+  return a + b;
+}
+const addFive = (num)=>{
+  return num + 5;
+}
+const argTimesTwo = (num)=>{
+  return num * 2;
+}
 
 /**
  * ### Challenge `carMaker`
